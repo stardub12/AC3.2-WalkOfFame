@@ -22,6 +22,9 @@
                                     <frame key="frameInset" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="vax-zc-3gE" kind="show" identifier="walkDetailSegue" id="fD1-6a-Ut9"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -34,6 +37,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ps7-Zz-YuJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1463" y="-81"/>
+        </scene>
+        <!--Walk Detail View Controller-->
+        <scene sceneID="QIV-5h-XdI">
+            <objects>
+                <viewController id="vax-zc-3gE" customClass="WalkDetailViewController" customModule="WalkOfFame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b2p-2k-NmO"/>
+                        <viewControllerLayoutGuide type="bottom" id="apN-1X-7Dk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hV6-Cn-XkA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UG0-YR-jEv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-700" y="-81"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fsq-8d-IUv">

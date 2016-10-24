@@ -130,15 +130,23 @@ class WOFTableViewController: UITableViewController {
     }
 
     }
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "walkDetailSegue" {
+            let wof = segue.destination as? WalkDetailViewController
+            let selectWalk = sender as? UITableViewCell
+            let wofCell = self.tableView.indexPath(for: selectWalk!)!
+            wof?.walkOfFame = walks[wofCell.row].description
+        }
+        
+        
     }
-    */
+    
         
 }
 
